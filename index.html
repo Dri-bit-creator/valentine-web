@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Palanggaaa ♥</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <audio autoplay loop id="bgMusic">
+        <source src="music/perfect.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Floating hearts background -->
+    <div class="hearts-bg" id="heartsContainer"></div>
+
+    <div class="container">
+        <header>
+            <h1>For My Langgaaaa</h1>
+            <p class="subtitle">A Valentine's Journey</p>
+        </header>
+
+        <!-- Countdown Section -->
+        <div class="countdown-section">
+            <h2 class="countdown-title">Until Our Valentine's Day</h2>
+            <div class="countdown" id="countdown">
+                <div class="countdown-item">
+                    <div class="countdown-number" id="days">00</div>
+                    <div class="countdown-label">Days</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="hours">00</div>
+                    <div class="countdown-label">Hours</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="minutes">00</div>
+                    <div class="countdown-label">Minutes</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="seconds">00</div>
+                    <div class="countdown-label">Seconds</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Memory Gallery -->
+        <div class="gallery-grid">
+            <div class="memory-card" data-memory="0">
+                <div class="memory-image">
+                    <img src="img/first.jpg" alt="Our Memory" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="memory-content">
+                    <h3 class="memory-title">Our First Encounter</h3>
+                    <p class="memory-date">A Day to Remember</p>
+                    <p class="memory-text">Click to reveal the memory...</p>
+                </div>
+            </div>
+
+            <div class="memory-card" data-memory="1">
+                <div class="memory-image">
+                    <img src="img/Iknew.jpg" alt="Our Memory" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="memory-content">
+                    <h3 class="memory-title">When I Knew</h3>
+                    <p class="memory-date">That Perfect Moment</p>
+                    <p class="memory-text">Click to reveal the memory...</p>
+                </div>
+            </div>
+
+            <div class="memory-card" data-memory="2">
+                <div class="memory-image">
+                    <img src="img/adventure.jpg" alt="Our Memory" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="memory-content">
+                    <h3 class="memory-title">Our Adventure</h3>
+                    <p class="memory-date">Exploring Together</p>
+                    <p class="memory-text">Click to reveal the memory...</p>
+                </div>
+            </div>
+
+            <div class="memory-card" data-memory="3">
+                <div class="memory-image">
+                    <img src="img/smile.jpg" alt="Our Memory" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="memory-content">
+                    <h3 class="memory-title">Your Smile</h3>
+                    <p class="memory-date">What I Love Most</p>
+                    <p class="memory-text">Click to reveal the memory...</p>
+                </div>
+            </div>
+
+            <div class="memory-card" data-memory="4">
+                <div class="memory-image">
+                    <img src="img/Perfect.jpg" alt="Our Memory" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="memory-content">
+                    <h3 class="memory-title">Our Song</h3>
+                    <p class="memory-date">Dancing in the Kitchen</p>
+                    <p class="memory-text">Click to reveal the memory...</p>
+                </div>
+            </div>
+
+            <div class="memory-card" data-memory="5">
+                <div class="memory-image">
+                    <img src="img/future.jpg" alt="Our Memory" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="memory-content">
+                    <h3 class="memory-title">Looking Forward</h3>
+                    <p class="memory-date">All the Days Ahead</p>
+                    <p class="memory-text">Click to reveal the memory...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Love Letter -->
+        <div class="love-letter">
+            <div class="letter-header">
+                <h2 class="letter-title">To My Beloved Palangging</h2>
+                <p class="letter-subtitle">A Valentine's Message</p>
+            </div>
+            <div class="letter-body">
+                <p>Every moment with you is a treasure, every smile a gift, every day a blessing. You've brought light into my life in ways I never imagined possible. This Valentine's Day, I want you to know that my love for you grows deeper with each passing moment and efforts. You are my heart, my joy, my everything. ILOVEYOUUUUU PALANGGAAAAAAA NAKOOOOOO MMMMMWWUUUUUUAAAHHHH MMMMMMMWWWWUUUUUUAAAAHHHHH (sorry langg wa koy nahatag nmo karong valentines mao ng kani sa raman ha, pasensyain kaayu laaangggg).
+                </p>
+                <div class="signature">Nagmamahal Imong Palanggaaa nga badlungon ug sugsugan ♥</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeModal">×</button>
+            <div class="modal-image" id="modalEmoji"></div>
+            <h3 class="modal-title" id="modalTitle"></h3>
+            <p class="modal-date" id="modalDate"></p>
+            <p class="modal-text" id="modalText"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
